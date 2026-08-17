@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Bookmark.Entities/Bookmark.Entities.csproj" Id="5b40ecea-5d5e-49fb-8071-70618df7c1a8" />
+  <Project Path="Bookmark.Infrastructure/Bookmark.Infrastructure.csproj" Id="899eb1d2-7296-4cf4-aff9-4524a3c14479" />
+  <Project Path="Bookmark.Test/Bookmark.Test.csproj" Id="b99deace-dbac-4d65-b208-4b3a9d193ff9" />
+  <Project Path="Bookmark.Usecase/Bookmark.Usecase.csproj" Id="78f41e4d-5a4c-424e-a31a-148b9d212f29" />
+  <Project Path="Bookmark/Bookmark.Endpoint.csproj" />
+</Solution>
