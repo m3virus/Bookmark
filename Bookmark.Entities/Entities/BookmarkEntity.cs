@@ -2,7 +2,7 @@
 
 namespace Bookmark.Entities.Entities
 {
-    public sealed class Bookmark: BaseEntity
+    public sealed class BookmarkEntity: BaseEntity
     {
         public required string Url { get; set; }
         public required string Title { get; set; }
