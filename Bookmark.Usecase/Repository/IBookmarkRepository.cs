@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Bookmark.Infrastructure.Repository
 {
-    internal interface IBookmarkRepository
+    public interface IBookmarkRepository
     {
     }
 }
