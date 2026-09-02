@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bookmark.Entities.Bases
+﻿namespace Bookmark.Entities.Bases
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
+        public Guid Id { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public string Ip { get; set; }
+
     }
 }

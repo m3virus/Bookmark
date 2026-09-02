@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bookmark.Entities.Bases;
 
 namespace Bookmark.Entities.Entities
 {
-    internal class Bookmark
+    public sealed class Bookmark: BaseEntity
     {
+        public required string Url { get; set; }
+        public required string Title { get; set; }
+        public string? Notes { get; set; } = null;
     }
 }

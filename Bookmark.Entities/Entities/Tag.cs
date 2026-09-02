@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bookmark.Entities.Bases;
 
 namespace Bookmark.Entities.Entities
 {
-    internal class Tag
+    public sealed class Tag: BaseEntity
     {
+        public required string Name { get; set; }
     }
 }
