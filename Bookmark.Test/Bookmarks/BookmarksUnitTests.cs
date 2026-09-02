@@ -1,4 +1,7 @@
 ﻿
+using Bookmark.Entities.Entities;
+using Bookmark.Infrastructure.Repository;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,7 +14,14 @@ namespace Bookmark.Test.Bookmarks
         [Fact]
         public void CreateBookmark_WithValidData_ReturnsCreatedBookmark()
         {
+            var bookmarkRepo = new Mock<IBookmarkRepository>();
+            var bookmarkModel = new BookmarkEntity
+            {
+                Title = "Title",
+                Url = "URL",
+            };
 
+            bookmarkRepo.create(bookmarkModel);
         }
         [Fact]
         public void CreateBookmark_WithEmptyTitle_ThrowsValidationException()

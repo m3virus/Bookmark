@@ -16,6 +16,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bookmark.Endpoints\Bookmark.Endpoint.csproj" />
+    <ProjectReference Include="..\Bookmark.Entities\Bookmark.Entities.csproj" />
+    <ProjectReference Include="..\Bookmark.Infrastructure\Bookmark.Infrastructure.csproj" />
+    <ProjectReference Include="..\Bookmark.Usecase\Bookmark.Usecase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
