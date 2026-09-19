@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Bookmark.Usecase.Bases;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Bookmark.Infrastructure.Repository
 {
-    public class BookmarkRepository
+    public class BookmarkRepository:BaseRepository<bookmark>
     {
     }
 }

@@ -7,4 +7,9 @@ namespace Bookmark.Usecase.Bases
     public class BaseResponse
     {
     }
+
+    public class BaseResponse<T> : BaseResponse
+    {
+
+    }
 }
