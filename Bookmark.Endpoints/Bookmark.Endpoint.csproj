@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bookmark.Infrastructure\Bookmark.Infrastructure.csproj" />
     <ProjectReference Include="..\Bookmark.Usecase\Bookmark.Usecase.csproj" />
   </ItemGroup>
 
