@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bookmark.Entities\Bookmark.Entities.csproj" />
+	  <ProjectReference Include="..\Bookmark.Entities\Bookmark.Entities.csproj" />useUsecase
+    <ProjectReference Include="..\Bookmark.Usecase\Bookmark.Usecase.csproj" />
+  </ItemGroup>
+
 </Project>

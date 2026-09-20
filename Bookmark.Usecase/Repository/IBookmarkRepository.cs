@@ -6,5 +6,6 @@ namespace Bookmark.Infrastructure.Repository
 {
     public interface IBookmarkRepository
     {
+
     }
 }
