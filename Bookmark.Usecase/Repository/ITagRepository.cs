@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Bookmark.Usecase.Base;
 
 namespace Bookmark.Infrastructure.Repository
 {
-    internal interface ITagRepository
+    public interface ITagRepository: IBaseRepository<ITagRepository>
     {
     }
 }
