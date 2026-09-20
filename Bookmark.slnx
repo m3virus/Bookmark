@@ -1,7 +1,6 @@
 <Solution>
   <Project Path="Bookmark.Endpoints/Bookmark.Endpoint.csproj" />
   <Project Path="Bookmark.Entities/Bookmark.Entities.csproj" />
-  <Project Path="Bookmark.Infrastructure/Bookmark.Infrastructure.csproj" />
   <Project Path="Bookmark.Test/Bookmark.Test.csproj" />
   <Project Path="Bookmark.Usecase/Bookmark.Usecase.csproj" />
 </Solution>
