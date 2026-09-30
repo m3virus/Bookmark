@@ -3,18 +3,17 @@ using Bookmark.Entities.Entities;
 using Bookmark.Infrastructure.Repository;
 using Bookmark.Usecase.Bases;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Xunit;
 
 namespace Bookmark.Test.Bookmarks
 {
     public class BookmarksUnitTests
     {
         #region CreateBookmark
+        
         [Fact]
         public async Task CreateBookmark_WithValidData_ReturnsCreatedBookmark()
-        {  
+        {
             //arrange 
             var bookmarkRepo = new Mock<IBookmarkRepository>();
             var bookmarkModel = new BookmarkEntity
@@ -22,20 +21,19 @@ namespace Bookmark.Test.Bookmarks
                 Title = "Title",
                 Url = "URL",
             };
+
             //act
-            bookmarkRepo
-                .Setup(x => x.CreateAsync(It.IsAny<BookmarkEntity>()))
-                .ReturnsAsync(new BaseResponse<BookmarkEntity>
-                {
-                    
-                });
             var result = await bookmarkRepo.Object.CreateAsync(bookmarkModel);
             //todo: check the database too
             //assert
             Assert.NotNull(result);
             Assert.True(result.IsSuccess);
-
+            Assert.NotNull(result.Data);
+            Assert.Equal("Title", result.Data.Title);
+            Assert.Equal("URL", result.Data.Url);
         }
+
+        
         [Fact]
         public void CreateBookmark_WithEmptyTitle_ThrowsValidationException()
         {
