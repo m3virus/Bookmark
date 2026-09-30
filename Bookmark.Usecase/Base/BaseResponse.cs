@@ -7,15 +7,16 @@
             IsSuccess = isSuccess;
             Message = message;
         }
-        private bool IsSuccess { get; set; }
-        private string? Message { get; set; }
+        public bool IsSuccess { get; private set; }
+        public string? Message { get; private set; }
 
-        public static BaseResponse success() => new (true, null);
-        public static BaseResponse failure(string message) => new (false, message);
-        public static BaseResponse<T>(T data)
+        public static BaseResponse Success() => new(true, null);
+        public static BaseResponse Failure(string message) => new(false, message);
+        public static BaseResponse Success<TRequest>(TRequest data) => new BaseResponse<TRequest>(data, true, null);
+        public static BaseResponse Failure<TRequest>(string message) => new BaseResponse<TRequest>(default, false, null);
 
     }
-
+    
     public class BaseResponse<T> : BaseResponse
     {
         public T Data { get; set; }
@@ -24,6 +25,7 @@
         {
             Data = data;
         }
+        
 
 
     }
